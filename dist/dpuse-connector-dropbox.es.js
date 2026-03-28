@@ -48,7 +48,7 @@ var n = {
 	vendorAccountURL: null,
 	vendorDocumentationURL: null,
 	vendorHomeURL: null,
-	version: "0.2.476"
+	version: "0.2.477"
 }, r = "lo38r2co3ixibhn", i = "https://api.dpuse.app/authenticate", a = class {
 	abortController;
 	config;
