@@ -1,5 +1,5 @@
 import { EngineUtilities } from '@dpuse/dpuse-shared/engine';
-import { AuditObjectContentOptions, AuditObjectContentResult, ConnectionConfig, ConnectorConfig, ConnectorInterface, FindObjectOptions, FindObjectResult, GetReadableStreamOptions, ListNodesOptions, ListNodesResult, PreviewObjectOptions, RetrievalTypeId, RetrieveRecordsOptions, RetrieveRecordsSummary } from '@dpuse/dpuse-shared/component/connector';
+import { AuditObjectContentOptions, AuditObjectContentResult, ConnectorConfig, ConnectorInterface, FindObjectOptions, FindObjectResult, GetReadableStreamOptions, ListNodesOptions, ListNodesResult, PreviewObjectOptions, RetrievalTypeId, RetrieveRecordsOptions, RetrieveRecordsSummary } from '@dpuse/dpuse-shared/component/connector';
 import { ToolConfig } from '@dpuse/dpuse-shared/component/tool';
 import { ParsingRecord, PreviewConfig } from '@dpuse/dpuse-shared/component/dataView';
 export declare class Connector implements ConnectorInterface {
@@ -9,7 +9,7 @@ export declare class Connector implements ConnectorInterface {
     readonly toolConfigs: ToolConfig[];
     constructor(engineUtilities: EngineUtilities, toolConfigs: ToolConfig[]);
     abortOperation(): void;
-    authenticate(connectionConfig: ConnectionConfig, accountId: string, windowCenterX: number, windowCenterY: number): Window | undefined;
+    authenticateConnection(accountId: string, windowCenterX: number, windowCenterY: number): Window | undefined;
     auditObjectContent(options: AuditObjectContentOptions, chunk: (rowCount: number) => void): Promise<AuditObjectContentResult>;
     findObject(options: FindObjectOptions): Promise<FindObjectResult>;
     getReadableStream(options: GetReadableStreamOptions): Promise<ReadableStream<Uint8Array>>;

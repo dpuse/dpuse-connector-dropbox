@@ -58,14 +58,14 @@ export class Connector implements ConnectorInterface {
     }
 
     // Authenticate a connection.
-    authenticate(connectionConfig: ConnectionConfig, accountId: string, windowCenterX: number, windowCenterY: number): Window | undefined {
+    authenticateConnection(accountId: string, windowCenterX: number, windowCenterY: number): Window | undefined {
         const url =
             AUTHORISE_URL +
             `?client_id=${CLIENT_ID}` +
             '&force_reapprove=true' +
             `&redirect_uri=${REDIRECT_URI}` +
             '&response_type=code' +
-            `&state=dropbox|${accountId}|${connectionConfig.id}` +
+            `&state=dropbox|${accountId}}` +
             '&token_access_type=offline';
         const popupHeight = 800;
         const popupWidth = 700;
