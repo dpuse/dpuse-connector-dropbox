@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-connector-dropbox",
-    "version": "0.2.471",
+    "version": "0.2.472",
     "license": "MIT",
     "author": "Jonathan Terrell <terrell.jm@gmail.com>",
     "private": false,
@@ -28,7 +28,8 @@
     "dependencies": {
         "@dpuse/dpuse-shared": "^0.3.598",
         "@dpuse/dpuse-tool-csv-parse": "^0.0.141",
-        "@dpuse/dpuse-tool-file-operators": "^0.0.17"
+        "@dpuse/dpuse-tool-file-operators": "^0.0.17",
+        "p-queue": "^9.1.0"
     },
     "devDependencies": {
         "@dpuse/dpuse-development": "^0.3.487",
