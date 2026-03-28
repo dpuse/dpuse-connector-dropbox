@@ -6,6 +6,7 @@ import { normalizeToError } from '@dpuse/dpuse-shared/errors';
 import type {
     AuditObjectContentOptions,
     AuditObjectContentResult,
+    ConnectionConfig,
     ConnectorConfig,
     ConnectorInterface,
     FindObjectOptions,
@@ -28,6 +29,11 @@ import type { Tool as FileOperatorsTool } from '@dpuse/dpuse-tool-file-operators
 // Data
 import config from '~/config.json';
 
+// Constants
+const AUTHORISE_URL = 'https://www.dropbox.com/oauth2/authorize';
+const CLIENT_ID = 'lo38r2co3ixibhn';
+const REDIRECT_URI = 'https://api.dpuse.app/authenticate';
+
 // Connectors
 export class Connector implements ConnectorInterface {
     abortController: AbortController | undefined;
@@ -49,6 +55,26 @@ export class Connector implements ConnectorInterface {
         if (!this.abortController) return;
         this.abortController.abort();
         this.abortController = undefined;
+    }
+
+    // Authenticate a connection.
+    authenticate(connectionConfig: ConnectionConfig, accountId: string, windowCenterX: number, windowCenterY: number): Window | undefined {
+        const url =
+            AUTHORISE_URL +
+            `?client_id=${CLIENT_ID}` +
+            '&force_reapprove=true' +
+            `&redirect_uri=${REDIRECT_URI}` +
+            '&response_type=code' +
+            `&state=dropbox|${accountId}|${connectionConfig.id}` +
+            '&token_access_type=offline';
+        const popupHeight = 800;
+        const popupWidth = 700;
+        const popupLeft = windowCenterX - popupWidth / 2;
+        const popupTop = windowCenterY - popupHeight / 2;
+        const popup = window.open(url, 'DPUseAuthenticationWindow', `height=${popupHeight},width=${popupWidth},top=${popupTop},left=${popupLeft}`);
+        if (popup == null) return undefined;
+        popup.focus();
+        return popup;
     }
 
     // Audit object content
