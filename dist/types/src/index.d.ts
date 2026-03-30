@@ -9,7 +9,6 @@ export declare class Connector implements ConnectorInterface {
     readonly toolConfigs: ToolConfig[];
     constructor(engineUtilities: EngineUtilities, toolConfigs: ToolConfig[]);
     abortOperation(): void;
-    authenticateConnection(accountId: string, windowCenterX: number, windowCenterY: number): Window | undefined;
     auditObjectContent(options: AuditObjectContentOptions, chunk: (rowCount: number) => void): Promise<AuditObjectContentResult>;
     findObject(options: FindObjectOptions): Promise<FindObjectResult>;
     getReadableStream(options: GetReadableStreamOptions): Promise<ReadableStream<Uint8Array>>;

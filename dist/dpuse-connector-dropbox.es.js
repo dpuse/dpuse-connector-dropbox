@@ -33,7 +33,6 @@ var n = {
 	lastUpdatedAt: null,
 	operations: [
 		"abortOperation",
-		"authenticateConnection",
 		"auditObjectContent",
 		"findObject",
 		"getReadableStream",
@@ -48,8 +47,8 @@ var n = {
 	vendorAccountURL: null,
 	vendorDocumentationURL: null,
 	vendorHomeURL: null,
-	version: "0.2.477"
-}, r = "lo38r2co3ixibhn", i = "https://api.dpuse.app/authenticate", a = class {
+	version: "0.2.478"
+}, r = class {
 	abortController;
 	config;
 	engineUtilities;
@@ -59,10 +58,6 @@ var n = {
 	}
 	abortOperation() {
 		this.abortController &&= (this.abortController.abort(), void 0);
-	}
-	authenticateConnection(e, t, n) {
-		let a = `https://www.dropbox.com/oauth2/authorize?client_id=${r}&force_reapprove=true&redirect_uri=${i}&response_type=code&state=dropbox|${e}}&token_access_type=offline`, o = t - 700 / 2, s = n - 800 / 2, c = window.open(a, "DPUseAuthenticationWindow", `height=800,width=700,top=${s},left=${o}`);
-		if (c != null) return c.focus(), c;
 	}
 	async auditObjectContent(n, r) {
 		this.abortController = new AbortController();
@@ -115,6 +110,6 @@ var n = {
 	}
 };
 //#endregion
-export { a as Connector };
+export { r as Connector };
 
 //# sourceMappingURL=dpuse-connector-dropbox.es.js.map
