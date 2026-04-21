@@ -18,8 +18,8 @@ import type {
     RetrievalTypeId,
     RetrieveRecordsOptions,
     RetrieveRecordsSummary
-} from '@dpuse/dpuse-shared/component/connector';
-import { loadTool, type ToolConfig } from '@dpuse/dpuse-shared/component/tool';
+} from '@dpuse/dpuse-shared/component/module/connector';
+import { loadTool, type ToolConfig } from '@dpuse/dpuse-shared/component/module/tool';
 import type { ParsingRecord, PreviewConfig } from '@dpuse/dpuse-shared/component/dataView';
 
 // DPU tools

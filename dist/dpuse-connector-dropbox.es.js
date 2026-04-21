@@ -12,7 +12,7 @@ function e(e) {
 	return /* @__PURE__ */ Error("Unknown error");
 }
 //#endregion
-//#region node_modules/@dpuse/dpuse-shared/dist/dpuse-shared-tools.es.js
+//#region node_modules/@dpuse/dpuse-shared/dist/dpuse-shared-componentModuleTool.es.js
 async function t(e, t) {
 	let n = `dpuse-tool-${t}`, r = e.find((e) => e.id === n);
 	if (!r) throw Error(`Connector could not load unknown tool '${t}'.`);
@@ -24,6 +24,7 @@ var n = {
 	description: { en: "Dropbox is a cloud-based file storage solution. It provides for the storage and sharing of files, as well as synchronising them across multiple devices." },
 	category: null,
 	categoryId: "fileStore",
+	firstCreatedAt: null,
 	implementations: { default: {
 		authMethodId: "oAuth2",
 		maxConnectionCount: -1
@@ -47,7 +48,7 @@ var n = {
 	vendorAccountURL: null,
 	vendorDocumentationURL: null,
 	vendorHomeURL: null,
-	version: "0.2.479"
+	version: "0.2.480"
 }, r = class {
 	abortController;
 	config;
