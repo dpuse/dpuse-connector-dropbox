@@ -29,7 +29,7 @@ var n = {
 		authMethodId: "oAuth2",
 		maxConnectionCount: -1
 	} },
-	icon: "<svg fill=\"none\" viewBox=\"0 0 128 128\"><path fill=\"#0061FE\" d=\"M0 0h128v128H0z\"/><path fill=\"#F7F5F2\" d=\"M43.7 32 23.404 44.75 43.701 57.5 64 44.75 84.3 57.5l20.298-12.75L84.299 32 64.002 44.75 43.7 32Zm0 51L23.404 70.25 43.701 57.5 64 70.25 43.702 83Zm20.302-12.75L84.299 57.5l20.298 12.75L84.299 83 64.002 70.25Zm0 29.75L43.7 87.25 64 74.5l20.3 12.75L64.002 100Z\"/></svg>",
+	icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"800\" width=\"1200\" id=\"svg126\" version=\"1.1\" viewBox=\"-35.3175 -50 306.085 300\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><defs id=\"defs112\"><style id=\"style110\">.cls-1{fill:#0061ff}</style></defs><path id=\"polygon116\" class=\"cls-1\" d=\"M58.86 75l58.87-37.5L58.86 0 0 37.5z\"></path><path id=\"polygon118\" class=\"cls-1\" d=\"M176.59 75l58.86-37.5L176.59 0l-58.86 37.5z\"></path><path id=\"polygon120\" class=\"cls-1\" d=\"M117.73 112.5L58.86 75 0 112.5 58.86 150z\"></path><path id=\"polygon122\" class=\"cls-1\" d=\"M176.59 150l58.86-37.5L176.59 75l-58.86 37.5z\"></path><path id=\"polygon124\" class=\"cls-1\" d=\"M176.59 162.5L117.73 125l-58.87 37.5 58.87 37.5z\"></path></svg>",
 	iconDark: "",
 	lastUpdatedAt: null,
 	operations: [
@@ -48,7 +48,7 @@ var n = {
 	vendorAccountURL: null,
 	vendorDocumentationURL: null,
 	vendorHomeURL: null,
-	version: "0.2.481"
+	version: "0.2.482"
 }, r = class {
 	abortController;
 	config;
