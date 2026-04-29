@@ -48,7 +48,7 @@ var n = {
 	vendorAccountURL: null,
 	vendorDocumentationURL: null,
 	vendorHomeURL: null,
-	version: "0.2.484"
+	version: "0.2.485"
 }, r = class {
 	abortController;
 	config;
