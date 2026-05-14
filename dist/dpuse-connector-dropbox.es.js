@@ -29,9 +29,9 @@ var n = {
 		authMethodId: "oAuth2",
 		maxConnectionCount: -1
 	} },
-	icon: "<svg viewBox=\"-35.318 -50 306.085 300\"><defs id=\"defs112\"><style id=\"style110\">.cls-1{fill:#0061ff}</style></defs><path id=\"polygon116\" d=\"m58.86 75 58.87-37.5L58.86 0 0 37.5z\" class=\"cls-1\"/><path id=\"polygon118\" d=\"m176.59 75 58.86-37.5L176.59 0l-58.86 37.5z\" class=\"cls-1\"/><path id=\"polygon120\" d=\"M117.73 112.5 58.86 75 0 112.5 58.86 150z\" class=\"cls-1\"/><path id=\"polygon122\" d=\"m176.59 150 58.86-37.5L176.59 75l-58.86 37.5z\" class=\"cls-1\"/><path id=\"polygon124\" d=\"M176.59 162.5 117.73 125l-58.87 37.5 58.87 37.5z\" class=\"cls-1\"/></svg>",
+	icon: "<svg viewBox=\"-35.318 -50 306.085 300\"><path id=\"polygon116\" d=\"m58.86 75 58.87-37.5L58.86 0 0 37.5z\" fill=\"#0061ff\"/><path id=\"polygon118\" d=\"m176.59 75 58.86-37.5L176.59 0l-58.86 37.5z\" fill=\"#0061ff\"/><path id=\"polygon120\" d=\"M117.73 112.5 58.86 75 0 112.5 58.86 150z\" fill=\"#0061ff\"/><path id=\"polygon122\" d=\"m176.59 150 58.86-37.5L176.59 75l-58.86 37.5z\" fill=\"#0061ff\"/><path id=\"polygon124\" d=\"M176.59 162.5 117.73 125l-58.87 37.5 58.87 37.5z\" fill=\"#0061ff\"/></svg>",
 	iconDark: null,
-	iconNeutral: "<svg viewBox=\"-35.318 -50 306.085 300\"><defs id=\"defs112\"><style id=\"style110\">.cls-1{fill:currentColor</style></defs><path id=\"polygon116\" d=\"m58.86 75 58.87-37.5L58.86 0 0 37.5z\" class=\"cls-1\"/><path id=\"polygon118\" d=\"m176.59 75 58.86-37.5L176.59 0l-58.86 37.5z\" class=\"cls-1\"/><path id=\"polygon120\" d=\"M117.73 112.5 58.86 75 0 112.5 58.86 150z\" class=\"cls-1\"/><path id=\"polygon122\" d=\"m176.59 150 58.86-37.5L176.59 75l-58.86 37.5z\" class=\"cls-1\"/><path id=\"polygon124\" d=\"M176.59 162.5 117.73 125l-58.87 37.5 58.87 37.5z\" class=\"cls-1\"/></svg>",
+	iconNeutral: "<svg viewBox=\"-35.318 -50 306.085 300\"><path id=\"polygon116\" d=\"m58.86 75 58.87-37.5L58.86 0 0 37.5z\" fill=\"currentColor\"/><path id=\"polygon118\" d=\"m176.59 75 58.86-37.5L176.59 0l-58.86 37.5z\" fill=\"currentColor\"/><path id=\"polygon120\" d=\"M117.73 112.5 58.86 75 0 112.5 58.86 150z\" fill=\"currentColor\"/><path id=\"polygon122\" d=\"m176.59 150 58.86-37.5L176.59 75l-58.86 37.5z\" fill=\"currentColor\"/><path id=\"polygon124\" d=\"M176.59 162.5 117.73 125l-58.87 37.5 58.87 37.5z\" fill=\"currentColor\"/></svg>",
 	lastUpdatedAt: null,
 	operations: [
 		"abortOperation",
@@ -49,7 +49,7 @@ var n = {
 	vendorAccountURL: null,
 	vendorDocumentationURL: null,
 	vendorHomeURL: null,
-	version: "0.2.490"
+	version: "0.2.491"
 }, r = class {
 	abortController;
 	config;
