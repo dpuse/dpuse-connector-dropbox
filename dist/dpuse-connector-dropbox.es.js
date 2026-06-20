@@ -21,7 +21,7 @@ async function t(e, t) {
 var n = {
 	id: "dpuse-connector-dropbox",
 	label: { en: "Dropbox" },
-	description: { en: "Dropbox is a cloud-based file storage solution. It provides for the storage and sharing of files, as well as synchronising them across multiple devices." },
+	description: { en: "Provides access to a user's Dropbox account(s) for downloading and uploading files. Dropbox is a cloud-based file storage solution that provides for the storage and sharing of files, as well as synchronising them across multiple devices. Requires the user to authenticate via OAuth 2.0 for each account connected; access is scoped to that account's files and folders only." },
 	category: null,
 	categoryId: "fileStore",
 	firstCreatedAt: null,
@@ -49,7 +49,7 @@ var n = {
 	vendorAccountURL: null,
 	vendorDocumentationURL: null,
 	vendorHomeURL: null,
-	version: "0.2.492"
+	version: "0.2.493"
 }, r = class {
 	abortController;
 	config;
