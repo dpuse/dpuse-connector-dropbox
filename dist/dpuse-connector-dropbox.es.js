@@ -51,7 +51,7 @@ var n = {
 	vendorAccountURL: "https://www.dropbox.com/login",
 	vendorDocumentationURL: "https://help.dropbox.com/",
 	vendorHomeURL: "https://www.dropbox.com/",
-	version: "0.2.503",
+	version: "0.2.505",
 	operations: [
 		"abortOperation",
 		"auditObjectContent",

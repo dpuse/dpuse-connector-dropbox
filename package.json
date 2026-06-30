@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-connector-dropbox",
-    "version": "0.2.504",
+    "version": "0.2.505",
     "private": false,
     "description": "",
     "license": "MIT",
@@ -41,8 +41,8 @@
     "scripts": {
         "audit": "node -e \"import('@dpuse/dpuse-development').then(m => m.auditDependencies())\"",
         "build": "node -e \"import('@dpuse/dpuse-development').then(m => m.buildProject())\" && node -e \"import('@dpuse/dpuse-development').then(m => m.documentBundleSizes())\"",
-        "check": "node -e \"import('@dpuse/dpuse-development').then(m => m.checkDependencies())\"",
-        "document": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentDependencies(['BSD-3-Clause;MIT']))\"",
+        "check": "node -e \"import('@dpuse/dpuse-development').then(m => m.checkConfigFiles())\" && node -e \"import('@dpuse/dpuse-development').then(m => m.checkDependencies())\"",
+        "document": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentDependencies('BSD-3-Clause;MIT'))\"",
         "format": "node -e \"import('@dpuse/dpuse-development').then(m => m.formatCode())\"",
         "lint": "node -e \"import('@dpuse/dpuse-development').then(m => m.lintCode())\"",
         "release": "op run --env-file=.env -- node -e \"import('@dpuse/dpuse-development').then(m => m.releaseProject())\"",
@@ -56,7 +56,7 @@
         "p-queue": "^9.3.0"
     },
     "devDependencies": {
-        "@dpuse/dpuse-development": "^0.3.600",
+        "@dpuse/dpuse-development": "^0.3.602",
         "@eslint-community/eslint-plugin-eslint-comments": "^4.7.2",
         "@types/eslint-plugin-security": "^3.0.1",
         "@types/node": "^26.0.1",

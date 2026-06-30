@@ -10,22 +10,22 @@
             "name": "node_modules/@dpuse/dpuse-shared/dist",
             "children": [
               {
-                "uid": "97636535-1",
+                "uid": "358ca3c5-1",
                 "name": "dpuse-shared-errors.es.js"
               },
               {
-                "uid": "97636535-3",
+                "uid": "358ca3c5-3",
                 "name": "dpuse-shared-componentModuleTool.es.js"
               }
             ]
           },
           {
-            "uid": "97636535-5",
+            "uid": "358ca3c5-5",
             "name": "config.json"
           },
           {
             "name": "src/index.ts",
-            "uid": "97636535-7"
+            "uid": "358ca3c5-7"
           }
         ]
       }
@@ -33,82 +33,82 @@
     "isRoot": true
   },
   "nodeParts": {
-    "97636535-1": {
+    "358ca3c5-1": {
       "renderedLength": 539,
       "gzipLength": 272,
       "brotliLength": 221,
-      "metaUid": "97636535-0"
+      "metaUid": "358ca3c5-0"
     },
-    "97636535-3": {
+    "358ca3c5-3": {
       "renderedLength": 386,
       "gzipLength": 290,
       "brotliLength": 242,
-      "metaUid": "97636535-2"
+      "metaUid": "358ca3c5-2"
     },
-    "97636535-5": {
+    "358ca3c5-5": {
       "renderedLength": 2341,
-      "gzipLength": 840,
-      "brotliLength": 680,
-      "metaUid": "97636535-4"
+      "gzipLength": 839,
+      "brotliLength": 679,
+      "metaUid": "358ca3c5-4"
     },
-    "97636535-7": {
+    "358ca3c5-7": {
       "renderedLength": 1783,
       "gzipLength": 549,
       "brotliLength": 471,
-      "metaUid": "97636535-6"
+      "metaUid": "358ca3c5-6"
     }
   },
   "nodeMetas": {
-    "97636535-0": {
+    "358ca3c5-0": {
       "id": "/node_modules/@dpuse/dpuse-shared/dist/dpuse-shared-errors.es.js",
       "moduleParts": {
-        "dpuse-connector-dropbox.es.js": "97636535-1"
+        "dpuse-connector-dropbox.es.js": "358ca3c5-1"
       },
       "imported": [],
       "importedBy": [
         {
-          "uid": "97636535-6"
+          "uid": "358ca3c5-6"
         }
       ]
     },
-    "97636535-2": {
+    "358ca3c5-2": {
       "id": "/node_modules/@dpuse/dpuse-shared/dist/dpuse-shared-componentModuleTool.es.js",
       "moduleParts": {
-        "dpuse-connector-dropbox.es.js": "97636535-3"
+        "dpuse-connector-dropbox.es.js": "358ca3c5-3"
       },
       "imported": [],
       "importedBy": [
         {
-          "uid": "97636535-6"
+          "uid": "358ca3c5-6"
         }
       ]
     },
-    "97636535-4": {
+    "358ca3c5-4": {
       "id": "/config.json",
       "moduleParts": {
-        "dpuse-connector-dropbox.es.js": "97636535-5"
+        "dpuse-connector-dropbox.es.js": "358ca3c5-5"
       },
       "imported": [],
       "importedBy": [
         {
-          "uid": "97636535-6"
+          "uid": "358ca3c5-6"
         }
       ]
     },
-    "97636535-6": {
+    "358ca3c5-6": {
       "id": "/src/index.ts",
       "moduleParts": {
-        "dpuse-connector-dropbox.es.js": "97636535-7"
+        "dpuse-connector-dropbox.es.js": "358ca3c5-7"
       },
       "imported": [
         {
-          "uid": "97636535-0"
+          "uid": "358ca3c5-0"
         },
         {
-          "uid": "97636535-2"
+          "uid": "358ca3c5-2"
         },
         {
-          "uid": "97636535-4"
+          "uid": "358ca3c5-4"
         }
       ],
       "importedBy": [],
