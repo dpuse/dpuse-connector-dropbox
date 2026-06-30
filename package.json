@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-connector-dropbox",
-    "version": "0.2.503",
+    "version": "0.2.504",
     "private": false,
     "description": "",
     "license": "MIT",
@@ -42,7 +42,7 @@
         "audit": "node -e \"import('@dpuse/dpuse-development').then(m => m.auditDependencies())\"",
         "build": "node -e \"import('@dpuse/dpuse-development').then(m => m.buildProject())\" && node -e \"import('@dpuse/dpuse-development').then(m => m.documentBundleSizes())\"",
         "check": "node -e \"import('@dpuse/dpuse-development').then(m => m.checkDependencies())\"",
-        "document": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentDependencies(['MIT']))\"",
+        "document": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentDependencies(['BSD-3-Clause;MIT']))\"",
         "format": "node -e \"import('@dpuse/dpuse-development').then(m => m.formatCode())\"",
         "lint": "node -e \"import('@dpuse/dpuse-development').then(m => m.lintCode())\"",
         "release": "op run --env-file=.env -- node -e \"import('@dpuse/dpuse-development').then(m => m.releaseProject())\"",
@@ -76,7 +76,7 @@
         "sonda": "^0.13.1",
         "typescript": "^6.0.3",
         "typescript-eslint": "^8.62.1",
-        "vite": "^8.1.0",
+        "vite": "^8.1.1",
         "vite-plugin-dts": "^5.0.3",
         "vitest": "^4.1.9",
         "wrangler": "^4.105.0"
