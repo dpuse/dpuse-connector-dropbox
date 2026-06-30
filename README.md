@@ -24,11 +24,12 @@ The OWASP Dependency Check Report identifies known vulnerabilities in project de
 The following table lists top-level production and peer dependencies. All these dependencies (including transitive ones) have been recursively verified to use Apache-2.0, CC0-1.0, or MIT—commercially friendly licenses with minimal restrictions. Developers cloning this repository should independently verify dev and optional dependencies; users of the uploaded library are covered by these checks.
 
 <!-- DEPENDENCY_LICENSES_START -->
-|Name|Type|Installed|Latest|Latest Released|Deps|Document|
-|:-|:-|:-:|:-:|:-|-:|:-|
-|@dpuse/dpuse-shared|MIT|0.3.598|0.3.598|this month: 2026-03-28|0|[LICENSE](https://raw.githubusercontent.com/dpuse/dpuse-shared/main/LICENSE)|
-|@dpuse/dpuse-tool-csv-parse|MIT|0.0.141|0.0.141|this month: 2026-03-28|2|[LICENSE](https://raw.githubusercontent.com/dpuse/dpuse-tool-csv-parse/main/LICENSE)|
-|@dpuse/dpuse-tool-file-operators|MIT|0.0.17|0.0.17|this month: 2026-03-25|3|[LICENSE](https://raw.githubusercontent.com/dpuse/dpuse-tool-file-operators/main/LICENSE)|
+
+| Name                             | Type | Installed | Latest  | Latest Released        | Deps | Document                                                                                  |
+| :------------------------------- | :--- | :-------: | :-----: | :--------------------- | ---: | :---------------------------------------------------------------------------------------- |
+| @dpuse/dpuse-shared              | MIT  |  0.3.598  | 0.3.598 | this month: 2026-03-28 |    0 | [LICENSE](https://raw.githubusercontent.com/dpuse/dpuse-shared/main/LICENSE)              |
+| @dpuse/dpuse-tool-csv-parse      | MIT  |  0.0.141  | 0.0.141 | this month: 2026-03-28 |    2 | [LICENSE](https://raw.githubusercontent.com/dpuse/dpuse-tool-csv-parse/main/LICENSE)      |
+| @dpuse/dpuse-tool-file-operators | MIT  |  0.0.17   | 0.0.17  | this month: 2026-03-25 |    3 | [LICENSE](https://raw.githubusercontent.com/dpuse/dpuse-tool-file-operators/main/LICENSE) |
 
 <!-- DEPENDENCY_LICENSES_END -->
 
@@ -39,6 +40,20 @@ The following table lists top-level production and peer dependencies. All these 
 The Bundle Analysis Report provides a detailed breakdown of the bundle's composition and module sizes, helping to identify which modules contribute most to the final build. It is generated automatically on each release using the npm package `rollup-plugin-visualizer`.
 
 [View the Bundle Analysis Report](https://dpuse.github.io/dpuse-connector-dropbox/stats/index.html)
+
+<!-- BUNDLE_START -->
+
+|Chunk/Module/File|Composition|
+|:------ |:-----------|
+| dpuse-connector-dropbox.es.js | 4.2 kB · gz 1.5 kB · br 1.3 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;src | `████████████████░░░░` 81.2% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;config.json | `█████████░░░░░░░░░░░` 44.9% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.ts | `███████░░░░░░░░░░░░░` 36.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;@dpuse/dpuse-shared | `████░░░░░░░░░░░░░░░░` 18.8% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist/dpuse-shared-errors.es.js | `██░░░░░░░░░░░░░░░░░░` 11.0% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist/dpuse-shared-componentModuleTool.es.js | `██░░░░░░░░░░░░░░░░░░` 7.9% |
+
+<!-- BUNDLE_END -->
 
 ## Repository Management Commands
 

@@ -4,8 +4,19 @@
         "en": "Dropbox"
     },
     "description": {
-        "en": "Provides access to Dropbox account(s) for downloading and uploading files. Dropbox is a cloud-based file storage solution designed for storing, sharing, and synchronising files across multiple devices. Requires OAuth 2.0 authentication for each account connected; access is scoped to that account's files and folders only."
+        "en": [
+            "Provides access to Dropbox account(s) for file upload and download. Dropbox is a cloud-based file storage solution designed to store, share, and synchronise files across multiple devices. Requires OAuth 2.0 authentication for each account connected; access is scoped to that account's files and folders only."
+        ]
     },
+    "actionNames": [
+        "abortOperation",
+        "auditObjectContent",
+        "findObject",
+        "getReadableStream",
+        "listNodes",
+        "previewObject",
+        "retrieveRecords"
+    ],
     "category": null,
     "categoryId": "fileStore",
     "firstCreatedAt": null,
@@ -19,6 +30,13 @@
     "iconDark": null,
     "iconNeutral": "<svg viewBox=\"0 0 235.45 200\"><path fill=\"currentColor\" d=\"M58.86 75l58.87-37.5L58.86 0 0 37.5z\" /><path fill=\"currentColor\" d=\"M176.59 75l58.86-37.5L176.59 0l-58.86 37.5z\" /><path fill=\"currentColor\" d=\"M117.73 112.5L58.86 75 0 112.5 58.86 150z\" /><path fill=\"currentColor\" d=\"M176.59 150l58.86-37.5L176.59 75l-58.86 37.5z\" /><path fill=\"currentColor\" d=\"M176.59 162.5L117.73 125l-58.87 37.5 58.87 37.5z\" /></svg>",
     "lastUpdatedAt": null,
+    "status": null,
+    "statusId": "beta",
+    "typeId": "connector",
+    "vendorAccountURL": null,
+    "vendorDocumentationURL": null,
+    "vendorHomeURL": null,
+    "version": "0.2.500",
     "operations": [
         "abortOperation",
         "auditObjectContent",
@@ -28,12 +46,5 @@
         "previewObject",
         "retrieveRecords"
     ],
-    "status": null,
-    "statusId": "beta",
-    "typeId": "connector",
-    "usageId": "source",
-    "vendorAccountURL": null,
-    "vendorDocumentationURL": null,
-    "vendorHomeURL": null,
-    "version": "0.2.499"
+    "usageId": "source"
 }

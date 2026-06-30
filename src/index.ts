@@ -1,7 +1,6 @@
 // External dependencies
 
 // DPU framework
-import type { EngineUtilities } from '@dpuse/dpuse-shared/engine';
 import { normalizeToError } from '@dpuse/dpuse-shared/errors';
 import type {
     AuditObjectContentOptions,
@@ -9,13 +8,14 @@ import type {
     // ConnectionConfig,
     ConnectorConfig,
     ConnectorInterface,
+    ConnectorUtilities,
     FindObjectOptions,
     FindObjectResult,
     GetReadableStreamOptions,
     ListNodesOptions,
     ListNodesResult,
     PreviewObjectOptions,
-    RetrievalTypeId,
+    RecordRetrievalTypeId,
     RetrieveRecordsOptions,
     RetrieveRecordsSummary
 } from '@dpuse/dpuse-shared/component/module/connector';
@@ -33,13 +33,13 @@ import config from '~/config.json';
 export class Connector implements ConnectorInterface {
     abortController: AbortController | undefined;
     readonly config: ConnectorConfig;
-    engineUtilities: EngineUtilities;
+    connectorUtilities: ConnectorUtilities;
     readonly toolConfigs;
 
-    constructor(engineUtilities: EngineUtilities, toolConfigs: ToolConfig[]) {
+    constructor(connectorUtilities: ConnectorUtilities, toolConfigs: ToolConfig[]) {
         this.abortController = undefined;
         this.config = config as ConnectorConfig;
-        this.engineUtilities = engineUtilities;
+        this.connectorUtilities = connectorUtilities;
         this.toolConfigs = toolConfigs;
     }
 
@@ -116,7 +116,7 @@ export class Connector implements ConnectorInterface {
     // Retrieves all records from a CSV object node using streaming and chunked processing
     async retrieveRecords(
         options: RetrieveRecordsOptions,
-        chunk: (typeId: RetrievalTypeId, records: ParsingRecord[]) => void,
+        chunk: (typeId: RecordRetrievalTypeId, records: ParsingRecord[]) => void,
         complete: (result: RetrieveRecordsSummary) => void
     ): Promise<void> {
         this.abortController = new AbortController();
