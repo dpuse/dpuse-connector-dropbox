@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-connector-dropbox",
-    "version": "0.2.511",
+    "version": "0.2.512",
     "private": false,
     "description": "",
     "license": "MIT",
@@ -52,12 +52,12 @@
     "dependencies": {
         "@dpuse/dpuse-shared": "^0.3.729",
         "@dpuse/dpuse-tool-csv-parse": "^0.0.143",
-        "@dpuse/dpuse-tool-file-operators": "^0.0.41",
+        "@dpuse/dpuse-tool-file-operators": "^0.0.45",
         "p-queue": "^9.3.1"
     },
     "devDependencies": {
-        "@dpuse/dpuse-development": "^0.3.647",
-        "@dpuse/eslint-config-dpuse": "^1.0.98",
+        "@dpuse/dpuse-development": "^0.3.652",
+        "@dpuse/eslint-config-dpuse": "^1.0.101",
         "@types/node": "^26.1.0",
         "eslint": "^10.6.0",
         "prettier": "^3.9.4",
