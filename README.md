@@ -2,11 +2,6 @@
 
 <!-- OPENING_START -->
 
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDMgNDAiPjxwYXRoIGQ9Im0xMi41IDBsLTEyLjUgOC4xIDguNyA3IDEyLjUtNy44LTguNy03LjN6bS0xMi41IDIxLjlsMTIuNSA4LjIgOC43LTcuMy0xMi41LTcuNy04LjcgNi44em0yMS4yIDAuOWw4LjggNy4zIDEyLjQtOC4xLTguNi02LjktMTIuNiA3Ljd6bTIxLjItMTQuN2wtMTIuNC04LjEtOC44IDcuMyAxMi42IDcuOCA4LjYtN3ptLTIxLjEgMTYuM2wtOC44IDcuMy0zLjctMi41djIuOGwxMi41IDcuNSAxMi41LTcuNXYtMi44bC0zLjggMi41LTguNy03LjN6IiBmaWxsPSIjMDA3RUU1Ii8+PC9zdmc+">
-    <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDMgNDAiPjxwYXRoIGQ9Im0xMi41IDBsLTEyLjUgOC4xIDguNyA3IDEyLjUtNy44LTguNy03LjN6bS0xMi41IDIxLjlsMTIuNSA4LjIgOC43LTcuMy0xMi41LTcuNy04LjcgNi44em0yMS4yIDAuOWw4LjggNy4zIDEyLjQtOC4xLTguNi02LjktMTIuNiA3Ljd6bTIxLjItMTQuN2wtMTIuNC04LjEtOC44IDcuMyAxMi42IDcuOCA4LjYtN3ptLTIxLjEgMTYuM2wtOC44IDcuMy0zLjctMi41djIuOGwxMi41IDcuNSAxMi41LTcuNXYtMi44bC0zLjggMi41LTguNy03LjN6IiBmaWxsPSIjMDA3RUU1Ii8+PC9zdmc+" alt="dpuse-connector-dropbox icon" width="48" height="48">
-</picture>
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![DPUse version](https://img.shields.io/github/v/release/dpuse/dpuse-connector-dropbox?color=f6821f&label=DPUse)](https://github.com/dpuse/dpuse-connector-dropbox/releases/latest)
 [![CI](https://github.com/dpuse/dpuse-connector-dropbox/actions/workflows/ci.yml/badge.svg)](https://github.com/dpuse/dpuse-connector-dropbox/actions/workflows/ci.yml)
