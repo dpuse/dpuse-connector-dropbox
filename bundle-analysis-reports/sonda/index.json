@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.13.1",
-    "generatedAt": "2026-07-07T09:18:58.289Z",
+    "generatedAt": "2026-07-07T09:31:37.909Z",
     "integration": "vite",
     "sources": false,
     "gzip": false,
@@ -23,7 +23,7 @@
       "format": "other",
       "uncompressed": 2121,
       "gzip": 0,
-      "brotli": 612,
+      "brotli": 618,
       "parent": "dist/dpuse-connector-dropbox.es.js"
     },
     {
@@ -55,7 +55,7 @@
       "format": "esm",
       "uncompressed": 256,
       "gzip": 0,
-      "brotli": 156,
+      "brotli": 154,
       "parent": "dist/dpuse-connector-dropbox.es.js"
     },
     {
@@ -72,7 +72,7 @@
       "format": "esm",
       "uncompressed": 440,
       "gzip": 0,
-      "brotli": 149,
+      "brotli": 147,
       "parent": "dist/dpuse-connector-dropbox.es.js"
     },
     {
@@ -89,7 +89,7 @@
       "format": "esm",
       "uncompressed": 1387,
       "gzip": 0,
-      "brotli": 359,
+      "brotli": 356,
       "parent": "dist/dpuse-connector-dropbox.es.js"
     }
   ],
