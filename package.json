@@ -63,7 +63,7 @@
         "p-queue": "^9.3.1"
     },
     "devDependencies": {
-        "@dpuse/dpuse-development": "^0.3.681",
+        "@dpuse/dpuse-development": "^0.3.682",
         "@dpuse/eslint-config-dpuse": "^1.0.105",
         "@types/node": "^26.1.0",
         "eslint": "^10.6.0",
