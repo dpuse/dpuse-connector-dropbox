@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-connector-dropbox",
-    "version": "0.2.523",
+    "version": "0.2.524",
     "private": false,
     "description": "Provides access to Dropbox account(s) for file upload and download.",
     "license": "MIT",
@@ -27,7 +27,7 @@
         "dist"
     ],
     "engines": {
-        "node": ">=22",
+        "node": ">=23.11",
         "npm": ">=11"
     },
     "prettier": "@dpuse/dpuse-development/prettierrc",

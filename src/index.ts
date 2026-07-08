@@ -1,11 +1,8 @@
-// External dependencies
-
-// DPU framework
+// ── DPUse Framework
 import { normalizeToError } from '@dpuse/dpuse-shared/errors';
 import type {
     AuditObjectContentOptions,
     AuditObjectContentResult,
-    // ConnectionConfig,
     ConnectorConfig,
     ConnectorInterface,
     ConnectorUtilities,
@@ -22,14 +19,15 @@ import type {
 import { loadTool, type ToolConfig } from '@dpuse/dpuse-shared/component/module/tool';
 import type { ParsingRecord, PreviewConfig } from '@dpuse/dpuse-shared/component/dataView';
 
-// DPU tools
+// ── DPUse tools
 import type { Tool as CSVParseTool } from '@dpuse/dpuse-tool-csv-parse';
 import type { Tool as FileOperatorsTool } from '@dpuse/dpuse-tool-file-operators';
 
-// Data
+// ── Data
 import config from '~/config.json';
 
-// Connectors
+// ── Connectors ───────────────────────────────────────────────────────────────────────────────────────────────────────
+
 export class Connector implements ConnectorInterface {
     abortController: AbortController | undefined;
     readonly config: ConnectorConfig;
@@ -43,7 +41,7 @@ export class Connector implements ConnectorInterface {
         this.toolConfigs = toolConfigs;
     }
 
-    // Operations ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    // Operations ──────────────────────────────────────────────────────────────────────────────────────────────────────
 
     // Abort the currently running operation
     abortOperation(): void {
