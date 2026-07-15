@@ -32,8 +32,10 @@
     "status": null,
     "statusId": "beta",
     "typeId": "connector",
+    "usage": null,
+    "usageId": "source",
     "vendorAccountURL": "https://www.dropbox.com/login",
     "vendorDocumentationURL": "https://help.dropbox.com/",
     "vendorHomeURL": "https://www.dropbox.com/",
-    "version": "0.2.525"
+    "version": "0.2.526"
 }
