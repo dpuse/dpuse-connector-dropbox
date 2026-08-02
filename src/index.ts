@@ -21,7 +21,7 @@ import type { ParsingRecord, PreviewConfig } from '@dpuse/dpuse-shared/component
 
 // ── DPUse tools
 import type { Tool as CSVParseTool } from '@dpuse/dpuse-tool-adaltas-csv-parser';
-import type { Tool as FileOperatorsTool } from '@dpuse/dpuse-tool-file-operators';
+import type { Tool as FileOperatorsTool } from '@dpuse/dpuse-tool-file-previewer';
 
 // ── Data
 import config from '~/config.json';

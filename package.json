@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-connector-dropbox",
-    "version": "0.2.528",
+    "version": "0.2.529",
     "private": false,
     "description": "Provides access to Dropbox account(s) for file upload and download.",
     "license": "MIT",
@@ -59,7 +59,7 @@
     "dependencies": {
         "@dpuse/dpuse-shared": "^0.3.760",
         "@dpuse/dpuse-tool-adaltas-csv-parser": "^0.0.155",
-        "@dpuse/dpuse-tool-file-operators": "^0.0.57",
+        "@dpuse/dpuse-tool-file-previewer": "^0.0.58",
         "p-queue": "^9.3.3"
     },
     "devDependencies": {
