@@ -20,7 +20,7 @@ import { loadTool, type ToolConfig } from '@dpuse/dpuse-shared/component/module/
 import type { ParsingRecord, PreviewConfig } from '@dpuse/dpuse-shared/component/dataView';
 
 // ── DPUse tools
-import type { Tool as CSVParseTool } from '@dpuse/dpuse-tool-csv-parse';
+import type { Tool as CSVParseTool } from '@dpuse/dpuse-tool-adaltas-csv-parser';
 import type { Tool as FileOperatorsTool } from '@dpuse/dpuse-tool-file-operators';
 
 // ── Data

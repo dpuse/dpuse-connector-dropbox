@@ -1,34 +1,34 @@
 {
-  "version": "0.2.518",
+  "version": "0.2.527",
   "name": "@dpuse/dpuse-connector-dropbox",
   "dependencies": {
     "@dpuse/dpuse-shared": {
-      "version": "0.3.737",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-0.3.737.tgz",
+      "version": "0.3.760",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-0.3.760.tgz",
       "overridden": false
     },
-    "@dpuse/dpuse-tool-csv-parse": {
-      "version": "0.0.143",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-csv-parse/-/dpuse-tool-csv-parse-0.0.143.tgz",
+    "@dpuse/dpuse-tool-adaltas-csv-parser": {
+      "version": "0.0.155",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-adaltas-csv-parser/-/dpuse-tool-adaltas-csv-parser-0.0.155.tgz",
       "overridden": false,
       "dependencies": {
         "@dpuse/dpuse-shared": {
-          "version": "0.3.737"
+          "version": "0.3.760"
         },
         "csv-parse": {
-          "version": "6.2.1",
-          "resolved": "https://registry.npmjs.org/csv-parse/-/csv-parse-6.2.1.tgz",
+          "version": "7.0.1",
+          "resolved": "https://registry.npmjs.org/csv-parse/-/csv-parse-7.0.1.tgz",
           "overridden": false
         }
       }
     },
     "@dpuse/dpuse-tool-file-operators": {
-      "version": "0.0.45",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-file-operators/-/dpuse-tool-file-operators-0.0.45.tgz",
+      "version": "0.0.57",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-file-operators/-/dpuse-tool-file-operators-0.0.57.tgz",
       "overridden": false,
       "dependencies": {
         "@dpuse/dpuse-shared": {
-          "version": "0.3.737"
+          "version": "0.3.760"
         },
         "chardet": {
           "version": "2.2.0",
@@ -104,8 +104,8 @@
       }
     },
     "p-queue": {
-      "version": "9.3.1",
-      "resolved": "https://registry.npmjs.org/p-queue/-/p-queue-9.3.1.tgz",
+      "version": "9.3.3",
+      "resolved": "https://registry.npmjs.org/p-queue/-/p-queue-9.3.3.tgz",
       "overridden": false,
       "dependencies": {
         "eventemitter3": {

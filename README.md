@@ -36,6 +36,7 @@ This connector is a Source connector that supports only read actions. Connectors
 | Describe Connection |  |
 | Drop Object |  |
 | Find Object | ✓ |
+| Get Info |  |
 | Get Readable Stream | ✓ |
 | Get Record |  |
 | List Nodes | ✓ |
@@ -61,7 +62,7 @@ cd dpuse-connector-dropbox
 npm install
 ```
 
-_Requires [Node.js](https://nodejs.org/) 22 or later, [npm](https://www.npmjs.com/) 11 or later, and [TypeScript](https://www.typescriptlang.org/) 6 or later._
+_Requires [Node.js](https://nodejs.org/) 23.11 or later, [npm](https://www.npmjs.com/) 11 or later, and [TypeScript](https://www.typescriptlang.org/) 6.0.3 or later._
 
 <!-- USAGE_END -->
 
@@ -74,19 +75,19 @@ License data is collected automatically on each release using [license-checker](
 |Dependency|Version|License(s)|Document|
 |:-|:-:|:-|:-|
 |[@borewit/text-codec](https://github.com/Borewit/text-codec)|0.2.2|MIT|[LICENSE](licenses/downloads/@borewit/text-codec@0.2.2-LICENSE.txt)|
-|[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)|0.3.737|MIT|[LICENSE](licenses/downloads/@dpuse/dpuse-shared@0.3.737-LICENSE.txt)|
-|[@dpuse/dpuse-tool-csv-parse](https://github.com/dpuse/dpuse-tool-csv-parse)|0.0.143|MIT|[LICENSE](licenses/downloads/@dpuse/dpuse-tool-csv-parse@0.0.143-LICENSE.txt)|
-|[@dpuse/dpuse-tool-file-operators](https://github.com/dpuse/dpuse-tool-file-operators)|0.0.45|MIT|[LICENSE](licenses/downloads/@dpuse/dpuse-tool-file-operators@0.0.45-LICENSE.txt)|
+|[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)|0.3.760|MIT|[LICENSE](licenses/downloads/@dpuse/dpuse-shared@0.3.760-LICENSE.txt)|
+|[@dpuse/dpuse-tool-adaltas-csv-parser](https://github.com/dpuse/dpuse-tool-adaltas-csv-parser)|0.0.155|MIT|[LICENSE](licenses/downloads/@dpuse/dpuse-tool-adaltas-csv-parser@0.0.155-LICENSE.txt)|
+|[@dpuse/dpuse-tool-file-operators](https://github.com/dpuse/dpuse-tool-file-operators)|0.0.57|MIT|[LICENSE](licenses/downloads/@dpuse/dpuse-tool-file-operators@0.0.57-LICENSE.txt)|
 |[@tokenizer/inflate](https://github.com/Borewit/tokenizer-inflate)|0.4.1|MIT|[LICENSE](licenses/downloads/@tokenizer/inflate@0.4.1-LICENSE.txt)|
 |[@tokenizer/token](https://github.com/Borewit/tokenizer-token)|0.3.0|MIT|[LICENSE](licenses/downloads/@tokenizer/token@0.3.0-LICENSE.txt)|
 |[chardet](https://github.com/runk/node-chardet)|2.2.0|MIT|[LICENSE](licenses/downloads/chardet@2.2.0-LICENSE.txt)|
-|[csv-parse](https://github.com/adaltas/node-csv)|6.2.1|MIT|[LICENSE](licenses/downloads/csv-parse@6.2.1-LICENSE.txt)|
+|[csv-parse](https://github.com/adaltas/node-csv)|7.0.1|MIT|[LICENSE](licenses/downloads/csv-parse@7.0.1-LICENSE.txt)|
 |[debug](https://github.com/debug-js/debug)|4.4.3|MIT|[LICENSE](licenses/downloads/debug@4.4.3-LICENSE.txt)|
 |[eventemitter3](https://github.com/primus/eventemitter3)|5.0.4|MIT|[LICENSE](licenses/downloads/eventemitter3@5.0.4-LICENSE.txt)|
 |[file-type](https://github.com/sindresorhus/file-type)|22.0.1|MIT|[LICENSE](licenses/downloads/file-type@22.0.1-LICENSE.txt)|
 |[ieee754](https://github.com/feross/ieee754)|1.2.1|BSD-3-Clause|[LICENSE](licenses/downloads/ieee754@1.2.1-LICENSE.txt)|
 |[ms](https://github.com/vercel/ms)|2.1.3|MIT|[LICENSE](licenses/downloads/ms@2.1.3-LICENSE.txt)|
-|[p-queue](https://github.com/sindresorhus/p-queue)|9.3.1|MIT|[LICENSE](licenses/downloads/p-queue@9.3.1-LICENSE.txt)|
+|[p-queue](https://github.com/sindresorhus/p-queue)|9.3.3|MIT|[LICENSE](licenses/downloads/p-queue@9.3.3-LICENSE.txt)|
 |[p-timeout](https://github.com/sindresorhus/p-timeout)|7.0.1|MIT|[LICENSE](licenses/downloads/p-timeout@7.0.1-LICENSE.txt)|
 |[strtok3](https://github.com/Borewit/strtok3)|10.3.5|MIT|[LICENSE](licenses/downloads/strtok3@10.3.5-LICENSE.txt)|
 |[token-types](https://github.com/Borewit/token-types)|6.1.2|MIT|[LICENSE](licenses/downloads/token-types@6.1.2-LICENSE.txt)|
@@ -100,28 +101,28 @@ License data is collected automatically on each release using [license-checker](
 
 The dependency tree below lists every package in this project — direct and transitive — along with its installed version, release date, and update status. Packages flagged ❗ have a newer version available; ⚠️ indicates a package that hasn't been updated in the last 6 months or longer. Neither flag necessarily indicates a problem: we let new releases stabilise before upgrading, and some packages are simply mature and stable, requiring no active development.
 
-- **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 0.3.737 — this month: 2026-07-07
-- **[@dpuse/dpuse-tool-csv-parse](https://github.com/dpuse/dpuse-tool-csv-parse)** 0.0.143 — 2 months ago: 2026-04-21
-  - **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 0.3.737 — this month: 2026-07-07
-  - **[csv-parse](https://github.com/adaltas/node-csv)** 6.2.1 — 3 months ago: 2026-03-20 → **latest**: 7.0.1 — this month: 2026-07-02 ❗
-- **[@dpuse/dpuse-tool-file-operators](https://github.com/dpuse/dpuse-tool-file-operators)** 0.0.45 — this month: 2026-07-04
-  - **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 0.3.737 — this month: 2026-07-07
-  - **[chardet](https://github.com/runk/node-chardet)** 2.2.0 — this month: 2026-06-20
-  - **[file-type](https://github.com/sindresorhus/file-type)** 22.0.1 — 2 months ago: 2026-04-09
-    - **[@tokenizer/inflate](https://github.com/Borewit/tokenizer-inflate)** 0.4.1 — 7 months ago: 2025-11-18 ⚠️ 
-      - **[debug](https://github.com/debug-js/debug)** 4.4.3 — 9 months ago: 2025-09-13 ⚠️ 
-        - **[ms](https://github.com/vercel/ms)** 2.1.3 — 66 months ago: 2020-12-08 ⚠️ 
-      - **[token-types](https://github.com/Borewit/token-types)** 6.1.2 — 6 months ago: 2026-01-01
-    - **[strtok3](https://github.com/Borewit/strtok3)** 10.3.5 — 3 months ago: 2026-03-21
-      - **[@tokenizer/token](https://github.com/Borewit/tokenizer-token)** 0.3.0 — 59 months ago: 2021-07-12 ⚠️ 
-    - **[token-types](https://github.com/Borewit/token-types)** 6.1.2 — 6 months ago: 2026-01-01
-      - **[@borewit/text-codec](https://github.com/Borewit/text-codec)** 0.2.2 — 3 months ago: 2026-03-11
-      - **[@tokenizer/token](https://github.com/Borewit/tokenizer-token)** 0.3.0 — 59 months ago: 2021-07-12 ⚠️ 
-      - **[ieee754](https://github.com/feross/ieee754)** 1.2.1 — 68 months ago: 2020-10-27 ⚠️ 
-    - **[uint8array-extras](https://github.com/sindresorhus/uint8array-extras)** 1.5.0 — 10 months ago: 2025-08-22 ⚠️ 
-- **[p-queue](https://github.com/sindresorhus/p-queue)** 9.3.1 — this month: 2026-07-03
-  - **[eventemitter3](https://github.com/primus/eventemitter3)** 5.0.4 — 5 months ago: 2026-01-19
-  - **[p-timeout](https://github.com/sindresorhus/p-timeout)** 7.0.1 — 9 months ago: 2025-10-07 ⚠️
+- **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 0.3.760 — this month: 2026-08-02
+- **[@dpuse/dpuse-tool-adaltas-csv-parser](https://github.com/dpuse/dpuse-tool-adaltas-csv-parser)** 0.0.155 — this month: 2026-08-02
+  - **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 0.3.760 — this month: 2026-08-02
+  - **[csv-parse](https://github.com/adaltas/node-csv)** 7.0.1 — **1 month** ago: 2026-07-02
+- **[@dpuse/dpuse-tool-file-operators](https://github.com/dpuse/dpuse-tool-file-operators)** 0.0.57 — this month: 2026-07-23
+  - **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 0.3.760 — this month: 2026-08-02
+  - **[chardet](https://github.com/runk/node-chardet)** 2.2.0 — **1 month** ago: 2026-06-20
+  - **[file-type](https://github.com/sindresorhus/file-type)** 22.0.1 — **3 months** ago: 2026-04-09
+    - **[@tokenizer/inflate](https://github.com/Borewit/tokenizer-inflate)** 0.4.1 — **8 months** ago: 2025-11-18 ⚠️
+      - **[debug](https://github.com/debug-js/debug)** 4.4.3 — **10 months** ago: 2025-09-13 ⚠️
+        - **[ms](https://github.com/vercel/ms)** 2.1.3 — **67 months** ago: 2020-12-08 ⚠️
+      - **[token-types](https://github.com/Borewit/token-types)** 6.1.2 — **7 months** ago: 2026-01-01 ⚠️
+    - **[strtok3](https://github.com/Borewit/strtok3)** 10.3.5 — **4 months** ago: 2026-03-21
+      - **[@tokenizer/token](https://github.com/Borewit/tokenizer-token)** 0.3.0 — **60 months** ago: 2021-07-12 ⚠️
+    - **[token-types](https://github.com/Borewit/token-types)** 6.1.2 — **7 months** ago: 2026-01-01 ⚠️
+      - **[@borewit/text-codec](https://github.com/Borewit/text-codec)** 0.2.2 — **4 months** ago: 2026-03-11
+      - **[@tokenizer/token](https://github.com/Borewit/tokenizer-token)** 0.3.0 — **60 months** ago: 2021-07-12 ⚠️
+      - **[ieee754](https://github.com/feross/ieee754)** 1.2.1 — **69 months** ago: 2020-10-27 ⚠️
+    - **[uint8array-extras](https://github.com/sindresorhus/uint8array-extras)** 1.5.0 — **11 months** ago: 2025-08-22 ⚠️
+- **[p-queue](https://github.com/sindresorhus/p-queue)** 9.3.3 — this month: 2026-07-22
+  - **[eventemitter3](https://github.com/primus/eventemitter3)** 5.0.4 — **6 months** ago: 2026-01-19
+  - **[p-timeout](https://github.com/sindresorhus/p-timeout)** 7.0.1 — **9 months** ago: 2025-10-07 ⚠️
 
 <!-- DEPENDENCY_TREE_END -->
 
@@ -133,14 +134,16 @@ The Bundle Analysis Report is generated automatically on each release using [Son
 
 _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not generate source maps for CSS._
 
-| Chunk/Module/File                                                                           | Composition                  |
-| :------------------------------------------------------------------------------------------ | :--------------------------- |
-| dist/dpuse-connector-dropbox.es.js                                                          | 4.1 kB · brotli 1.2 kB       |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned]                                         | `██████████░░░░░░░░░░` 50.4% |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                                      | `███████░░░░░░░░░░░░░` 33.0% |
-| &nbsp;&nbsp;&nbsp;&nbsp;@dpuse/dpuse-shared                                                 | `███░░░░░░░░░░░░░░░░░` 16.6% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist/dpuse-shared-errors.es.js              | `██░░░░░░░░░░░░░░░░░░` 10.5% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist/dpuse-shared-componentModuleTool.es.js | `█░░░░░░░░░░░░░░░░░░░` 6.1%  |
+|Chunk/Module/File|Composition|
+|:------ |:-----------|
+| dist/dpuse-connector-dropbox.es.js | 3.6 kB · brotli 1.2 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `█████████░░░░░░░░░░░` 44.1% |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts | `███████░░░░░░░░░░░░░` 37.2% |
+| &nbsp;&nbsp;&nbsp;&nbsp;@dpuse/dpuse-shared | `████░░░░░░░░░░░░░░░░` 18.7% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist/dpuse-shared-errors.es.js | `██░░░░░░░░░░░░░░░░░░` 11.8% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist/dpuse-shared-componentModuleTool.es.js | `█░░░░░░░░░░░░░░░░░░░` 6.9% |
+
+(unassigned) = bytes Sonda can't trace to a specific source line (whitespace, stray keywords, bundler-injected region markers) — not actual missing/unknown code.
 
 <!-- BUNDLE_END -->
 

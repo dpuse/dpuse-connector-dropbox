@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-07-07T13:53:46.898Z",
+    "generatedAt": "2026-08-02T11:38:01.407Z",
     "integration": "vite",
     "sources": false,
     "gzip": false,
@@ -21,9 +21,9 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 2118,
+      "uncompressed": 1643,
       "gzip": 0,
-      "brotli": 611,
+      "brotli": 595,
       "parent": "dist/dpuse-connector-dropbox.es.js"
     },
     {
@@ -31,15 +31,15 @@
       "name": "config.json",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2207
+      "uncompressed": 1723
     },
     {
       "kind": "asset",
       "name": "dist/dpuse-connector-dropbox.es.js",
       "type": "script",
-      "uncompressed": 4201,
+      "uncompressed": 3727,
       "gzip": 0,
-      "brotli": 1276
+      "brotli": 1264
     },
     {
       "kind": "filesystem",
@@ -53,9 +53,9 @@
       "name": "node_modules/@dpuse/dpuse-shared/dist/dpuse-shared-componentModuleTool.es.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 256,
+      "uncompressed": 257,
       "gzip": 0,
-      "brotli": 156,
+      "brotli": 160,
       "parent": "dist/dpuse-connector-dropbox.es.js"
     },
     {
@@ -63,7 +63,7 @@
       "name": "node_modules/@dpuse/dpuse-shared/dist/dpuse-shared-errors.es.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3598
+      "uncompressed": 3619
     },
     {
       "kind": "chunk",
