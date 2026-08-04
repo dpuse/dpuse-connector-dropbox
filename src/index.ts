@@ -55,7 +55,7 @@ export class Connector implements ConnectorInterface {
         this.abortController = new AbortController();
 
         try {
-            const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'csv-parse');
+            const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'adaltas-csv-parser');
             const parseStreamOptions = { delimiter: options.valueDelimiterId, relax_column_count: true, relax_quotes: true };
             return { processedRowCount: 0, durationMs: 0 };
         } catch (error) {
@@ -99,10 +99,10 @@ export class Connector implements ConnectorInterface {
             const startedAt = performance.now();
 
             // Preview file to determine file format and decode text.
-            const fileOperatorsTool = await loadTool<FileOperatorsTool>(this.toolConfigs, 'file-operators');
+            const fileOperatorsTool = await loadTool<FileOperatorsTool>(this.toolConfigs, 'file-previewer');
 
             // Parse text, identify delimiters, and produce string value records.
-            const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'csv-parse');
+            const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'adaltas-csv-parser');
 
             return {} as PreviewConfig;
         } catch (error) {
@@ -119,7 +119,7 @@ export class Connector implements ConnectorInterface {
     ): Promise<void> {
         this.abortController = new AbortController();
         try {
-            const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'csv-parse');
+            const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'adaltas-csv-parser');
             const parseStreamOptions = { delimiter: options.valueDelimiterId, info: true, relax_column_count: true, relax_quotes: true };
             complete({} as RetrieveRecordsSummary);
         } catch (error) {
