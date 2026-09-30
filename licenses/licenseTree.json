@@ -1,43 +1,15 @@
 {
-  "version": "0.2.527",
+  "version": "0.2.533",
   "name": "@dpuse/dpuse-connector-dropbox",
   "dependencies": {
     "@dpuse/dpuse-shared": {
-      "version": "0.3.760",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-0.3.760.tgz",
-      "overridden": false
-    },
-    "@dpuse/dpuse-tool-adaltas-csv-parser": {
-      "version": "0.0.155",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-adaltas-csv-parser/-/dpuse-tool-adaltas-csv-parser-0.0.155.tgz",
+      "version": "0.3.865",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-0.3.865.tgz",
       "overridden": false,
       "dependencies": {
-        "@dpuse/dpuse-shared": {
-          "version": "0.3.760"
-        },
-        "csv-parse": {
-          "version": "7.0.1",
-          "resolved": "https://registry.npmjs.org/csv-parse/-/csv-parse-7.0.1.tgz",
-          "overridden": false
-        }
-      }
-    },
-    "@dpuse/dpuse-tool-file-operators": {
-      "version": "0.0.57",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-file-operators/-/dpuse-tool-file-operators-0.0.57.tgz",
-      "overridden": false,
-      "dependencies": {
-        "@dpuse/dpuse-shared": {
-          "version": "0.3.760"
-        },
-        "chardet": {
-          "version": "2.2.0",
-          "resolved": "https://registry.npmjs.org/chardet/-/chardet-2.2.0.tgz",
-          "overridden": false
-        },
         "file-type": {
-          "version": "22.0.1",
-          "resolved": "https://registry.npmjs.org/file-type/-/file-type-22.0.1.tgz",
+          "version": "22.1.1",
+          "resolved": "https://registry.npmjs.org/file-type/-/file-type-22.1.1.tgz",
           "overridden": false,
           "dependencies": {
             "@tokenizer/inflate": {
@@ -100,6 +72,51 @@
               "overridden": false
             }
           }
+        },
+        "valibot": {
+          "version": "1.5.0",
+          "resolved": "https://registry.npmjs.org/valibot/-/valibot-1.5.0.tgz",
+          "overridden": false,
+          "dependencies": {
+            "typescript": {
+              "version": "6.0.3",
+              "resolved": "https://registry.npmjs.org/typescript/-/typescript-6.0.3.tgz",
+              "overridden": false
+            }
+          }
+        }
+      }
+    },
+    "@dpuse/dpuse-tool-adaltas-csv-parser": {
+      "version": "0.0.166",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-adaltas-csv-parser/-/dpuse-tool-adaltas-csv-parser-0.0.166.tgz",
+      "overridden": false,
+      "dependencies": {
+        "@dpuse/dpuse-shared": {
+          "version": "0.3.865"
+        },
+        "csv-parse": {
+          "version": "7.0.3",
+          "resolved": "https://registry.npmjs.org/csv-parse/-/csv-parse-7.0.3.tgz",
+          "overridden": false
+        }
+      }
+    },
+    "@dpuse/dpuse-tool-file-previewer": {
+      "version": "0.0.66",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-file-previewer/-/dpuse-tool-file-previewer-0.0.66.tgz",
+      "overridden": false,
+      "dependencies": {
+        "@dpuse/dpuse-shared": {
+          "version": "0.3.865"
+        },
+        "chardet": {
+          "version": "2.2.0",
+          "resolved": "https://registry.npmjs.org/chardet/-/chardet-2.2.0.tgz",
+          "overridden": false
+        },
+        "file-type": {
+          "version": "22.1.1"
         }
       }
     },
