@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-10-01T09:57:53.087Z",
+    "generatedAt": "2026-10-02T10:27:45.406Z",
     "integration": "vite",
     "sources": false,
     "gzip": true,
@@ -22,7 +22,7 @@
       "type": "other",
       "format": "other",
       "uncompressed": 2641,
-      "gzip": 836,
+      "gzip": 837,
       "brotli": 0,
       "parent": "dist/dpuse-connector-dropbox.es.js"
     },
@@ -54,7 +54,7 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 9115,
-      "gzip": 2749,
+      "gzip": 2748,
       "brotli": 0,
       "parent": "dist/dpuse-connector-dropbox.es.js"
     },

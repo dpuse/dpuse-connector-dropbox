@@ -1,5 +1,4 @@
 // ── DPUse Framework
-import { loadTool, normalizeToError } from '@dpuse/dpuse-shared';
 import type {
     AuditObjectContentOptions,
     AuditObjectContentResult,
@@ -19,8 +18,9 @@ import type {
     RetrieveRecordsSummary,
     ToolConfig
 } from '@dpuse/dpuse-shared';
+import { loadTool, normalizeToError } from '@dpuse/dpuse-shared';
 
-// ── DPUse tools
+// ── DPUse Tools
 import type { Tool as CSVParseTool } from '@dpuse/dpuse-tool-adaltas-csv-parser';
 import type { Tool as FileOperatorsTool } from '@dpuse/dpuse-tool-file-previewer';
 

@@ -28,9 +28,9 @@ Provides access to Dropbox account(s) for file upload and download. Dropbox is a
 
 <!-- OPENING_END -->
 
-## Supported Actions
+<!-- SUPPORTED_ACTIONS_START -->
 
-<!-- CONNECTOR_ACTIONS_START -->
+## Supported Actions
 
 Connectors conform to a unified interface contract by implementing a specific subset of standard actions. These standardised actions allow the DPUse application to interact with any underlying data source in the same way, enabling Connectors to be built independently and loaded dynamically at runtime.
 
@@ -54,7 +54,7 @@ This connector is a Source connector that supports only read actions. Connectors
 | Retrieve Records     |     ✓     |
 | Upsert Records       |           |
 
-<!-- CONNECTOR_ACTIONS_END -->
+<!-- SUPPORTED_ACTIONS_END -->
 
 <!-- USAGE_START -->
 
@@ -80,47 +80,19 @@ This repository is managed using the common set of actions provided by [@dpuse/d
 
 ## Dependency Licenses
 
-License data is updated each time `npm run document` is run, using [license-checker](https://github.com/RSeidelsohn/license-checker-rseidelsohn). The following table lists all production dependencies. These dependencies (including transitive ones) have been checked and confirmed to use BSD-3-Clause or MIT — all permissive, commercially-friendly licenses. Users of the uploaded library are covered by these checks; developers cloning this repository should independently verify development dependencies.
+License data is updated each time `npm run document` is run, using [license-checker](https://github.com/RSeidelsohn/license-checker-rseidelsohn). The following table lists every package whose code, styles or assets are included in this project's build, as recorded by the build itself. Modules loaded at run time are not included; each documents its own. These dependencies have been checked and confirmed to use MIT, all of which allow commercial use. All are used unmodified, so any licence conditions that apply only to modified versions are not triggered. Developers cloning this repository should independently verify development dependencies.
 
-| Dependency                                                             | Version | License(s)   | Document                                                              |
-| :--------------------------------------------------------------------- | :-----: | :----------- | :-------------------------------------------------------------------- |
-| [@borewit/text-codec](https://github.com/Borewit/text-codec)           |  0.2.2  | MIT          | [LICENSE](licenses/downloads/@borewit/text-codec@0.2.2-LICENSE.txt)   |
-| [@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)           | 0.3.865 | MIT          | [LICENSE](licenses/downloads/@dpuse/dpuse-shared@0.3.865-LICENSE.txt) |
-| [@tokenizer/inflate](https://github.com/Borewit/tokenizer-inflate)     |  0.4.1  | MIT          | [LICENSE](licenses/downloads/@tokenizer/inflate@0.4.1-LICENSE.txt)    |
-| [@tokenizer/token](https://github.com/Borewit/tokenizer-token)         |  0.3.0  | MIT          | [LICENSE](licenses/downloads/@tokenizer/token@0.3.0-LICENSE.txt)      |
-| [debug](https://github.com/debug-js/debug)                             |  4.4.3  | MIT          | [LICENSE](licenses/downloads/debug@4.4.3-LICENSE.txt)                 |
-| [eventemitter3](https://github.com/primus/eventemitter3)               |  5.0.4  | MIT          | [LICENSE](licenses/downloads/eventemitter3@5.0.4-LICENSE.txt)         |
-| [file-type](https://github.com/sindresorhus/file-type)                 | 22.1.1  | MIT          | [LICENSE](licenses/downloads/file-type@22.1.1-LICENSE.txt)            |
-| [ieee754](https://github.com/feross/ieee754)                           |  1.2.1  | BSD-3-Clause | [LICENSE](licenses/downloads/ieee754@1.2.1-LICENSE.txt)               |
-| [ms](https://github.com/vercel/ms)                                     |  2.1.3  | MIT          | [LICENSE](licenses/downloads/ms@2.1.3-LICENSE.txt)                    |
-| [p-queue](https://github.com/sindresorhus/p-queue)                     |  9.3.3  | MIT          | [LICENSE](licenses/downloads/p-queue@9.3.3-LICENSE.txt)               |
-| [p-timeout](https://github.com/sindresorhus/p-timeout)                 |  7.0.1  | MIT          | [LICENSE](licenses/downloads/p-timeout@7.0.1-LICENSE.txt)             |
-| [strtok3](https://github.com/Borewit/strtok3)                          | 10.3.5  | MIT          | [LICENSE](licenses/downloads/strtok3@10.3.5-LICENSE.txt)              |
-| [token-types](https://github.com/Borewit/token-types)                  |  6.1.2  | MIT          | [LICENSE](licenses/downloads/token-types@6.1.2-LICENSE.txt)           |
-| [uint8array-extras](https://github.com/sindresorhus/uint8array-extras) |  1.5.0  | MIT          | [LICENSE](licenses/downloads/uint8array-extras@1.5.0-LICENSE.txt)     |
-| [valibot](https://github.com/open-circle/valibot)                      |  1.5.0  | MIT          | [LICENSE](licenses/downloads/valibot@1.5.0-LICENSE.txt)               |
+| Dependency                                                   | Version | License(s) | Document                                                              |
+| :----------------------------------------------------------- | :-----: | :--------- | :-------------------------------------------------------------------- |
+| [@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared) | 0.3.868 | MIT        | [LICENSE](licenses/downloads/@dpuse/dpuse-shared@0.3.868-LICENSE.txt) |
+| [valibot](https://github.com/open-circle/valibot)            |  1.5.0  | MIT        | [LICENSE](licenses/downloads/valibot@1.5.0-LICENSE.txt)               |
 
 ### Dependency Tree
 
-The dependency tree below lists every package in this project — direct and transitive — along with its installed version, release date, and update status. Packages flagged ❗ have a newer version available; ⚠️ indicates a package that hasn't been updated in the last 6 months or longer. Neither flag necessarily indicates a problem: we let new releases stabilise before upgrading, and some packages are mature and stable (have limited or no dependencies), so they require no active development.
+The dependency tree below shows how each package in the table above is reached — direct and transitive — along with its installed version, release date, and update status. A package that does not ship itself, such as one whose parts are bundled separately, is left out and what ships beneath it is shown in its place. Packages flagged ❗ have a newer version available; ⚠️ indicates a package that hasn't been updated in the last 6 months or longer. Neither flag necessarily indicates a problem: we let new releases stabilise before upgrading, and some packages are mature and stable (have limited or no dependencies), so they require no active development.
 
-- **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 0.3.865 — this month: 2026-09-29
-    - **[file-type](https://github.com/sindresorhus/file-type)** 22.1.1 — this month: 2026-09-17
-        - **[@tokenizer/inflate](https://github.com/Borewit/tokenizer-inflate)** 0.4.1 — **10 months** ago: 2025-11-18 ⚠️
-            - **[debug](https://github.com/debug-js/debug)** 4.4.3 — **12 months** ago: 2025-09-13 ⚠️
-                - **[ms](https://github.com/vercel/ms)** 2.1.3 — **69 months** ago: 2020-12-08 ⚠️
-            - **[token-types](https://github.com/Borewit/token-types)** 6.1.2 — **9 months** ago: 2026-01-01 ⚠️
-        - **[strtok3](https://github.com/Borewit/strtok3)** 10.3.5 — **6 months** ago: 2026-03-21
-            - **[@tokenizer/token](https://github.com/Borewit/tokenizer-token)** 0.3.0 — **62 months** ago: 2021-07-12 ⚠️
-        - **[token-types](https://github.com/Borewit/token-types)** 6.1.2 — **9 months** ago: 2026-01-01 ⚠️
-            - **[@borewit/text-codec](https://github.com/Borewit/text-codec)** 0.2.2 — **6 months** ago: 2026-03-11
-            - **[@tokenizer/token](https://github.com/Borewit/tokenizer-token)** 0.3.0 — **62 months** ago: 2021-07-12 ⚠️
-            - **[ieee754](https://github.com/feross/ieee754)** 1.2.1 — **71 months** ago: 2020-10-27 ⚠️
-        - **[uint8array-extras](https://github.com/sindresorhus/uint8array-extras)** 1.5.0 — **13 months** ago: 2025-08-22 ⚠️ → **latest**: 1.6.0 — this month: 2026-09-26 ❗
+- **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 0.3.868 — this month: 2026-10-02
     - **[valibot](https://github.com/open-circle/valibot)** 1.5.0 — this month: 2026-09-09
-- **[p-queue](https://github.com/sindresorhus/p-queue)** 9.3.3 — **2 months** ago: 2026-07-22
-    - **[eventemitter3](https://github.com/primus/eventemitter3)** 5.0.4 — **8 months** ago: 2026-01-19 ⚠️
-    - **[p-timeout](https://github.com/sindresorhus/p-timeout)** 7.0.1 — **11 months** ago: 2025-10-07 ⚠️ → **latest**: 7.0.2 — this month: 2026-09-12 ❗
 
 <!-- DEPENDENCY_LICENSES_END -->
 
@@ -132,12 +104,14 @@ This report is updated with each release, from the bundle the release builds, us
 
 _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not generate source maps for CSS._
 
-| Chunk/Module/File                                                     | Composition                  |
-| :-------------------------------------------------------------------- | :--------------------------- |
-| dist/dpuse-connector-dropbox.es.js                                    | 12.9 kB · gzip 3.9 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;@dpuse/dpuse-shared → dist/dpuse-shared.es.js | `██████████████░░░░░░` 69.2% |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)           | `████░░░░░░░░░░░░░░░░` 20.1% |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                | `██░░░░░░░░░░░░░░░░░░` 10.7% |
+| Chunk/Module/File                                                     | Composition                                 |
+| :-------------------------------------------------------------------- | :------------------------------------------ |
+| **dist/dpuse-connector-dropbox.es.js**                                | 12.9 kB · gzip 3.9 kB · 100.0% of the build |
+| &nbsp;&nbsp;&nbsp;&nbsp;@dpuse/dpuse-shared → dist/dpuse-shared.es.js | `██████████████░░░░░░` 69.2% · 8.9 kB       |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                | `██░░░░░░░░░░░░░░░░░░` 10.7% · 1.4 kB       |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)           | `████░░░░░░░░░░░░░░░░` 20.1% · 2.6 kB       |
+
+Bars show each row's share of its output file.
 
 (bundler output, whitespace & JSON) = bytes Sonda can't trace to a source file: whitespace (indentation and line breaks), code the bundler generates (region comments, the combined import/export lines, its small runtime helper and wrappers), and imported JSON such as `config.json`, which the bundler doesn't map. The JSON and the generated code are real bytes that ship; the whitespace mostly disappears once compressed.
 
