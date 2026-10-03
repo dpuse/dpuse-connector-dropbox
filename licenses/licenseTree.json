@@ -1,5 +1,5 @@
 {
-  "version": "0.2.539",
+  "version": "0.2.540",
   "name": "@dpuse/dpuse-connector-dropbox",
   "dependencies": {
     "@dpuse/dpuse-development": {
@@ -1271,22 +1271,12 @@
       }
     },
     "@dpuse/dpuse-tool-adaltas-csv-parser": {
-      "version": "0.0.167",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-adaltas-csv-parser/-/dpuse-tool-adaltas-csv-parser-0.0.167.tgz",
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-adaltas-csv-parser/-/dpuse-tool-adaltas-csv-parser-1.0.2.tgz",
       "overridden": false,
       "dependencies": {
         "@dpuse/dpuse-shared": {
-          "version": "0.3.869",
-          "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-0.3.869.tgz",
-          "overridden": false,
-          "dependencies": {
-            "file-type": {
-              "version": "22.1.1"
-            },
-            "valibot": {
-              "version": "1.5.0"
-            }
-          }
+          "version": "1.0.2"
         },
         "csv-parse": {
           "version": "7.0.3",
@@ -1296,22 +1286,12 @@
       }
     },
     "@dpuse/dpuse-tool-file-previewer": {
-      "version": "0.0.67",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-file-previewer/-/dpuse-tool-file-previewer-0.0.67.tgz",
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-file-previewer/-/dpuse-tool-file-previewer-1.0.2.tgz",
       "overridden": false,
       "dependencies": {
         "@dpuse/dpuse-shared": {
-          "version": "0.3.869",
-          "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-0.3.869.tgz",
-          "overridden": false,
-          "dependencies": {
-            "file-type": {
-              "version": "22.1.1"
-            },
-            "valibot": {
-              "version": "1.5.0"
-            }
-          }
+          "version": "1.0.2"
         },
         "chardet": {
           "version": "2.2.0",
