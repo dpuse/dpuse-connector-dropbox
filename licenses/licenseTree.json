@@ -1,5 +1,5 @@
 {
-  "version": "0.2.540",
+  "version": "1.0.001",
   "name": "@dpuse/dpuse-connector-dropbox",
   "dependencies": {
     "@dpuse/dpuse-development": {
