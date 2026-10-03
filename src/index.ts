@@ -52,7 +52,7 @@ export class Connector implements ConnectorInterface {
     }
 
     // Audit object content
-    async auditObjectContent(options: AuditObjectContentOptions, chunk: (rowCount: number) => void): Promise<AuditObjectContentResult> {
+    async auditObjectContent(options: AuditObjectContentOptions, _chunk: (rowCount: number) => void): Promise<AuditObjectContentResult> {
         this.abortController = new AbortController();
 
         try {
@@ -67,17 +67,17 @@ export class Connector implements ConnectorInterface {
     }
 
     // Find the folder path containing the specified object node
-    findObject(options: FindObjectOptions): Promise<FindObjectResult> {
+    findObject(_options: FindObjectOptions): Promise<FindObjectResult> {
         return Promise.reject(new Error('Not found.')); // Not found.
     }
 
     // Get a readable stream for the specified object node path
-    async getReadableStream(options: GetReadableStreamOptions): Promise<ReadableStream<Uint8Array>> {
+    async getReadableStream(_options: GetReadableStreamOptions): Promise<ReadableStream<Uint8Array>> {
         // Create an abort controller and extract its signal.
         const { signal } = (this.abortController = new AbortController());
 
         try {
-            // eslint-disable-next-line unicorn/no-useless-promise-resolve-reject
+            // eslint-disable-next-line unicorn/no-useless-promise-resolve-reject -- Placeholder until this action is implemented.
             return await Promise.resolve({} as ReadableStream<Uint8Array>);
         } catch (error) {
             throw normalizeToError(error);
@@ -87,12 +87,12 @@ export class Connector implements ConnectorInterface {
     }
 
     // Lists all nodes (folders and objects) in the specified folder path
-    listNodes(options: ListNodesOptions): Promise<ListNodesResult> {
+    listNodes(_options: ListNodesOptions): Promise<ListNodesResult> {
         return Promise.resolve({} as ListNodesResult);
     }
 
     // Preview the contents of the object node with the specified path
-    async previewObject(options: PreviewObjectOptions): Promise<PreviewConfig> {
+    async previewObject(_options: PreviewObjectOptions): Promise<PreviewConfig> {
         // Create an abort controller and extract its signal.
         const { signal } = (this.abortController = new AbortController());
 
