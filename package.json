@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-connector-dropbox",
-    "version": "1.0.104",
+    "version": "1.0.105",
     "private": false,
     "description": "Provides access to Dropbox account(s) for file upload and download.",
     "license": "MIT",
