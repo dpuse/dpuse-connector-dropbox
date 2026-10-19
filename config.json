@@ -26,6 +26,7 @@
             "maxConnectionCount": -1
         }
     },
+    "itemTypeId": "file",
     "lastUpdatedAt": null,
     "status": null,
     "statusId": "beta",
@@ -35,5 +36,5 @@
     "vendorAccountURL": "https://www.dropbox.com/login",
     "vendorDocumentationURL": "https://help.dropbox.com/",
     "vendorHomeURL": "https://www.dropbox.com/",
-    "version": "1.0.108"
+    "version": "1.0.109"
 }
