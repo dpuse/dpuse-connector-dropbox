@@ -57,7 +57,7 @@ export class Connector implements ConnectorInterface {
 
         try {
             const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'adaltas-csv-parser');
-            const parseStreamOptions = { delimiter: options.valueDelimiterId, relax_column_count: true, relax_quotes: true };
+            const parseStreamOptions = { delimiter: options.valueDelimiterId, relax_column_count: true };
             return { processedRowCount: 0, durationMs: 0 };
         } catch (error) {
             throw normalizeToError(error);
@@ -122,7 +122,7 @@ export class Connector implements ConnectorInterface {
         this.abortController = new AbortController();
         try {
             const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'adaltas-csv-parser');
-            const parseStreamOptions = { delimiter: options.valueDelimiterId, info: true, relax_column_count: true, relax_quotes: true };
+            const parseStreamOptions = { delimiter: options.valueDelimiterId, info: true, relax_column_count: true };
             complete({} as RetrieveRecordsSummary);
         } catch (error) {
             throw normalizeToError(error);
