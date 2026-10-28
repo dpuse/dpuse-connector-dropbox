@@ -5,6 +5,7 @@ import type {
     ConnectorConfig,
     ConnectorInterface,
     ConnectorUtilities,
+    ContentAuditConfig,
     FindObjectOptions,
     FindObjectResult,
     GetReadableStreamOptions,
@@ -58,7 +59,7 @@ export class Connector implements ConnectorInterface {
         try {
             const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'adaltas-csv-parser');
             const parseStreamOptions = { delimiter: options.valueDelimiterId, relax_column_count: true };
-            return { processedRowCount: 0, durationMs: 0 };
+            return { contentAuditConfig: {} as ContentAuditConfig };
         } catch (error) {
             throw normalizeToError(error);
         } finally {

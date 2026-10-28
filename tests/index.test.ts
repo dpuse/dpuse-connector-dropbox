@@ -43,7 +43,7 @@ describe('Connector', () => {
         const connector = new Connector({} as never, []);
         const complete = vi.fn();
 
-        expect(await connector.auditObjectContent({ path: '/a.csv' } as never, vi.fn())).toEqual({ processedRowCount: 0, durationMs: 0 });
+        expect(await connector.auditObjectContent({ path: '/a.csv' } as never, vi.fn())).toEqual({ contentAuditConfig: {} });
         expect(await connector.getReadableStream({ id: '', path: '/a.csv' })).toEqual({});
         expect(await connector.listNodes({ folderPath: '' })).toEqual({});
         expect(await connector.previewObject({ path: '/a.csv' } as never)).toEqual({});
