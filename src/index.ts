@@ -12,8 +12,8 @@ import type {
     ListNodesOptions,
     ListNodesResult,
     ParsingRecord,
-    PreviewConfig,
     PreviewObjectOptions,
+    PreviewObjectResult,
     RecordRetrievalTypeId,
     RetrieveRecordsOptions,
     RetrieveRecordsSummary,
@@ -53,7 +53,7 @@ export class Connector implements ConnectorInterface {
     }
 
     // Audit object content
-    async auditObjectContent(options: AuditObjectContentOptions, _chunk: (rowCount: number) => void): Promise<AuditObjectContentResult> {
+    async auditObjectContent(options: AuditObjectContentOptions, _chunk: (recordCount: number, byteCount: number) => void): Promise<AuditObjectContentResult> {
         this.abortController = new AbortController();
 
         try {
@@ -93,7 +93,7 @@ export class Connector implements ConnectorInterface {
     }
 
     // Preview the contents of the object node with the specified path
-    async previewObject(_options: PreviewObjectOptions): Promise<PreviewConfig> {
+    async previewObject(_options: PreviewObjectOptions): Promise<PreviewObjectResult> {
         // Create an abort controller and extract its signal.
         const { signal } = (this.abortController = new AbortController());
 
@@ -107,7 +107,7 @@ export class Connector implements ConnectorInterface {
             // Parse text, identify delimiters, and produce string value records.
             const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'adaltas-csv-parser');
 
-            return {} as PreviewConfig;
+            return {} as PreviewObjectResult;
         } catch (error) {
             throw normalizeToError(error);
         } finally {
