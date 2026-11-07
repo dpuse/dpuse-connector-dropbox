@@ -11,7 +11,7 @@ import type {
     GetReadableStreamOptions,
     ListNodesOptions,
     ListNodesResult,
-    ParsingRecord,
+    ParsedRecord,
     PreviewObjectOptions,
     PreviewObjectResult,
     RecordRetrievalTypeId,
@@ -19,7 +19,7 @@ import type {
     RetrieveRecordsSummary,
     ToolConfig
 } from '@dpuse/dpuse-shared';
-import { loadTool, normalizeToError } from '@dpuse/dpuse-shared';
+import { getValueDelimiterCharacter, loadTool, normalizeToError } from '@dpuse/dpuse-shared';
 
 // ── DPUse Tools
 import type { Tool as CSVParseTool } from '@dpuse/dpuse-tool-adaltas-csv-parser';
@@ -58,8 +58,8 @@ export class Connector implements ConnectorInterface {
 
         try {
             const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'adaltas-csv-parser');
-            const parseStreamOptions = { delimiter: options.valueDelimiterId, relax_column_count: true };
-            return { contentAuditConfig: {} as ContentAuditConfig };
+            const parseStreamOptions = { delimiter: getValueDelimiterCharacter(options.valueDelimiterId), relax_column_count: true };
+            return { contentAuditConfig: {} as ContentAuditConfig, hasHeaders: false };
         } catch (error) {
             throw normalizeToError(error);
         } finally {
@@ -117,13 +117,13 @@ export class Connector implements ConnectorInterface {
     // Retrieves all records from a CSV object node using streaming and chunked processing
     async retrieveRecords(
         options: RetrieveRecordsOptions,
-        chunk: (typeId: RecordRetrievalTypeId, records: ParsingRecord[]) => void,
+        chunk: (typeId: RecordRetrievalTypeId, records: ParsedRecord[]) => void,
         complete: (result: RetrieveRecordsSummary) => void
     ): Promise<void> {
         this.abortController = new AbortController();
         try {
             const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'adaltas-csv-parser');
-            const parseStreamOptions = { delimiter: options.valueDelimiterId, info: true, relax_column_count: true };
+            const parseStreamOptions = { delimiter: getValueDelimiterCharacter(options.valueDelimiterId), info: true, relax_column_count: true };
             complete({} as RetrieveRecordsSummary);
         } catch (error) {
             throw normalizeToError(error);
