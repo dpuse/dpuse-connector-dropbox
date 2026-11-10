@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-11-07T15:11:31.777Z",
+    "generatedAt": "2026-11-10T12:35:03.517Z",
     "integration": "vite",
     "sources": false,
     "gzip": true,
@@ -21,24 +21,17 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 2758,
-      "gzip": 860,
+      "uncompressed": 1505,
+      "gzip": 216,
       "brotli": 0,
       "parent": "dist/dpuse-connector-dropbox.es.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "config.json",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1812
     },
     {
       "kind": "asset",
       "name": "dist/dpuse-connector-dropbox.es.js",
       "type": "script",
-      "uncompressed": 13382,
-      "gzip": 4113,
+      "uncompressed": 12286,
+      "gzip": 3576,
       "brotli": 0
     },
     {
@@ -46,7 +39,7 @@
       "name": "node_modules/@dpuse/dpuse-shared/dist/dpuse-shared.es.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 57562
+      "uncompressed": 61854
     },
     {
       "kind": "chunk",
@@ -54,7 +47,7 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 9201,
-      "gzip": 2807,
+      "gzip": 2872,
       "brotli": 0,
       "parent": "dist/dpuse-connector-dropbox.es.js"
     },
@@ -63,15 +56,15 @@
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2362
+      "uncompressed": 2687
     },
     {
       "kind": "chunk",
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1423,
-      "gzip": 446,
+      "uncompressed": 1580,
+      "gzip": 488,
       "brotli": 0,
       "parent": "dist/dpuse-connector-dropbox.es.js"
     }

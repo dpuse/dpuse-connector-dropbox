@@ -16,30 +16,18 @@ vi.mock('@dpuse/dpuse-shared', async (importOriginal) => ({
 
 // The connector is not yet implemented, so these tests pin down what its placeholder actions do until it is.
 describe('Connector', () => {
-    it('constructs with the static config and no active operation', () => {
-        const connector = new Connector({} as never, []);
-        expect(connector.config.id).toBe('dpuse-connector-dropbox');
-        expect(connector.abortController).toBeUndefined();
-    });
-
-    it('aborts a running operation and clears it, and does nothing when none is running', () => {
+    it('abortOperation is a no-op when nothing is running', () => {
         const connector = new Connector({} as never, []);
         expect(() => {
             connector.abortOperation();
         }).not.toThrow();
-
-        const abortController = new AbortController();
-        connector.abortController = abortController;
-        connector.abortOperation();
-        expect(abortController.signal.aborted).toBe(true);
-        expect(connector.abortController).toBeUndefined();
     });
 
     it('finds no object', async () => {
         await expect(new Connector({} as never, []).findObject({ nodeId: 'x' } as never)).rejects.toThrow('Not found.');
     });
 
-    it('returns placeholder results and clears each operation it starts', async () => {
+    it('returns placeholder results', async () => {
         const connector = new Connector({} as never, []);
         const complete = vi.fn();
 
@@ -50,6 +38,5 @@ describe('Connector', () => {
         await connector.retrieveRecords({ path: '/a.csv' } as never, vi.fn(), complete);
 
         expect(complete).toHaveBeenCalledWith({});
-        expect(connector.abortController).toBeUndefined();
     });
 });

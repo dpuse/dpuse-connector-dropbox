@@ -2,7 +2,6 @@
 import type {
     AuditObjectContentOptions,
     AuditObjectContentResult,
-    ConnectorConfig,
     ConnectorInterface,
     ConnectorUtilities,
     ContentAuditConfig,
@@ -25,20 +24,15 @@ import { getValueDelimiterCharacter, loadTool, normalizeToError } from '@dpuse/d
 import type { Tool as CSVParseTool } from '@dpuse/dpuse-tool-adaltas-csv-parser';
 import type { Tool as FileOperatorsTool } from '@dpuse/dpuse-tool-file-previewer';
 
-// ── Data
-import config from '~/config.json';
-
 // ── Connectors ───────────────────────────────────────────────────────────────────────────────────────────────────────
 
 export class Connector implements ConnectorInterface {
-    abortController: AbortController | undefined;
-    readonly config: ConnectorConfig;
-    connectorUtilities: ConnectorUtilities;
-    readonly toolConfigs;
+    private abortController: AbortController | undefined; // The latest operation's. An operation that ends clears it only if no later one has replaced it.
+    private readonly connectorUtilities: ConnectorUtilities;
+    private readonly toolConfigs;
 
     constructor(connectorUtilities: ConnectorUtilities, toolConfigs: ToolConfig[]) {
         this.abortController = undefined;
-        this.config = config as ConnectorConfig;
         this.connectorUtilities = connectorUtilities;
         this.toolConfigs = toolConfigs;
     }
@@ -54,7 +48,8 @@ export class Connector implements ConnectorInterface {
 
     // Audit object content
     async auditObjectContent(options: AuditObjectContentOptions, _chunk: (recordCount: number, byteCount: number) => void): Promise<AuditObjectContentResult> {
-        this.abortController = new AbortController();
+        const abortController = new AbortController();
+        this.abortController = abortController;
 
         try {
             const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'adaltas-csv-parser');
@@ -63,7 +58,7 @@ export class Connector implements ConnectorInterface {
         } catch (error) {
             throw normalizeToError(error);
         } finally {
-            this.abortController = undefined;
+            if (this.abortController === abortController) this.abortController = undefined;
         }
     }
 
@@ -75,7 +70,9 @@ export class Connector implements ConnectorInterface {
     // Get a readable stream for the specified object node path
     async getReadableStream(_options: GetReadableStreamOptions): Promise<ReadableStream<Uint8Array>> {
         // Create an abort controller and extract its signal.
-        const { signal } = (this.abortController = new AbortController());
+        const abortController = new AbortController();
+        this.abortController = abortController;
+        const { signal } = abortController;
 
         try {
             // eslint-disable-next-line unicorn/no-useless-promise-resolve-reject -- Placeholder until this action is implemented.
@@ -83,7 +80,7 @@ export class Connector implements ConnectorInterface {
         } catch (error) {
             throw normalizeToError(error);
         } finally {
-            this.abortController = undefined;
+            if (this.abortController === abortController) this.abortController = undefined;
         }
     }
 
@@ -95,7 +92,9 @@ export class Connector implements ConnectorInterface {
     // Preview the contents of the object node with the specified path
     async previewObject(_options: PreviewObjectOptions): Promise<PreviewObjectResult> {
         // Create an abort controller and extract its signal.
-        const { signal } = (this.abortController = new AbortController());
+        const abortController = new AbortController();
+        this.abortController = abortController;
+        const { signal } = abortController;
 
         try {
             const asAt = Date.now();
@@ -111,7 +110,7 @@ export class Connector implements ConnectorInterface {
         } catch (error) {
             throw normalizeToError(error);
         } finally {
-            this.abortController = undefined;
+            if (this.abortController === abortController) this.abortController = undefined;
         }
     }
     // Retrieves all records from a CSV object node using streaming and chunked processing
@@ -120,7 +119,8 @@ export class Connector implements ConnectorInterface {
         chunk: (typeId: RecordRetrievalTypeId, records: ParsedRecord[]) => void,
         complete: (result: RetrieveRecordsSummary) => void
     ): Promise<void> {
-        this.abortController = new AbortController();
+        const abortController = new AbortController();
+        this.abortController = abortController;
         try {
             const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'adaltas-csv-parser');
             const parseStreamOptions = { delimiter: getValueDelimiterCharacter(options.valueDelimiterId), info: true, relax_column_count: true };
@@ -128,7 +128,7 @@ export class Connector implements ConnectorInterface {
         } catch (error) {
             throw normalizeToError(error);
         } finally {
-            this.abortController = undefined;
+            if (this.abortController === abortController) this.abortController = undefined;
         }
     }
 }
