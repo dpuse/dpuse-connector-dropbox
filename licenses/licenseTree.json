@@ -1,5 +1,5 @@
 {
-  "version": "1.0.116",
+  "version": "1.0.117",
   "name": "@dpuse/dpuse-connector-dropbox",
   "dependencies": {
     "@dpuse/dpuse-development": {
@@ -8,7 +8,7 @@
       "overridden": false,
       "dependencies": {
         "@dpuse/dpuse-shared": {
-          "version": "1.0.205"
+          "version": "1.0.207"
         },
         "license-checker-rseidelsohn": {
           "version": "5.0.1",
@@ -1194,8 +1194,8 @@
       }
     },
     "@dpuse/dpuse-shared": {
-      "version": "1.0.205",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-1.0.205.tgz",
+      "version": "1.0.207",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-1.0.207.tgz",
       "overridden": false,
       "dependencies": {
         "file-type": {
@@ -1264,34 +1264,16 @@
       }
     },
     "@dpuse/dpuse-tool-adaltas-csv-parser": {
-      "version": "1.0.128",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-adaltas-csv-parser/-/dpuse-tool-adaltas-csv-parser-1.0.128.tgz",
+      "version": "1.0.129",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-adaltas-csv-parser/-/dpuse-tool-adaltas-csv-parser-1.0.129.tgz",
       "overridden": false,
       "dependencies": {
         "@dpuse/dpuse-shared": {
-          "version": "1.0.205"
+          "version": "1.0.207"
         },
         "csv-parse": {
           "version": "7.0.3",
           "resolved": "https://registry.npmjs.org/csv-parse/-/csv-parse-7.0.3.tgz",
-          "overridden": false
-        }
-      }
-    },
-    "@dpuse/dpuse-tool-file-previewer": {
-      "version": "1.0.130",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-tool-file-previewer/-/dpuse-tool-file-previewer-1.0.130.tgz",
-      "overridden": false,
-      "dependencies": {
-        "@dpuse/dpuse-shared": {
-          "version": "1.0.205"
-        },
-        "file-type": {
-          "version": "22.3.0"
-        },
-        "jschardet": {
-          "version": "4.1.0",
-          "resolved": "https://registry.npmjs.org/jschardet/-/jschardet-4.1.0.tgz",
           "overridden": false
         }
       }
@@ -3560,19 +3542,19 @@
               }
             },
             "vite": {
-              "version": "8.3.7"
+              "version": "8.3.8"
             },
             "webpack": {}
           }
         },
         "vite": {
-          "version": "8.3.7"
+          "version": "8.3.8"
         }
       }
     },
     "vite": {
-      "version": "8.3.7",
-      "resolved": "https://registry.npmjs.org/vite/-/vite-8.3.7.tgz",
+      "version": "8.3.8",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-8.3.8.tgz",
       "overridden": false,
       "dependencies": {
         "@types/node": {
@@ -3813,7 +3795,7 @@
             },
             "msw": {},
             "vite": {
-              "version": "8.3.7"
+              "version": "8.3.8"
             }
           }
         },
@@ -3870,7 +3852,7 @@
           "version": "0.2.17"
         },
         "vite": {
-          "version": "8.3.7"
+          "version": "8.3.8"
         },
         "why-is-node-running": {
           "version": "3.2.1",

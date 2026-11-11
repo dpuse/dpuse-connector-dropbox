@@ -5,6 +5,7 @@ import type {
     ConnectorInterface,
     ConnectorUtilities,
     ContentAuditConfig,
+    FilePreviewerInterface,
     FindObjectOptions,
     FindObjectResult,
     GetReadableStreamOptions,
@@ -22,7 +23,6 @@ import { getValueDelimiterCharacter, loadTool, normalizeToError } from '@dpuse/d
 
 // ── DPUse Tools
 import type { Tool as CSVParseTool } from '@dpuse/dpuse-tool-adaltas-csv-parser';
-import type { Tool as FileOperatorsTool } from '@dpuse/dpuse-tool-file-previewer';
 
 // ── Connectors ───────────────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -101,7 +101,7 @@ export class Connector implements ConnectorInterface {
             const startedAt = performance.now();
 
             // Preview file to determine file format and decode text.
-            const fileOperatorsTool = await loadTool<FileOperatorsTool>(this.toolConfigs, 'file-previewer');
+            const fileOperatorsTool = await loadTool<FilePreviewerInterface>(this.toolConfigs, 'file-previewer');
 
             // Parse text, identify delimiters, and produce string value records.
             const csvParseTool = await loadTool<CSVParseTool>(this.toolConfigs, 'adaltas-csv-parser');
