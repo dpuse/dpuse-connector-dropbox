@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-connector-dropbox",
-    "version": "1.0.119",
+    "version": "1.0.120",
     "private": false,
     "description": "Provides access to Dropbox account(s) for file upload and download.",
     "license": "MIT",
@@ -61,7 +61,7 @@
         "test": "node -e \"import('@dpuse/dpuse-development').then(m => m.testProject())\""
     },
     "dependencies": {
-        "@dpuse/dpuse-shared": "^1.0.211",
+        "@dpuse/dpuse-shared": "^1.0.212",
         "p-queue": "^10.0.0"
     },
     "devDependencies": {
