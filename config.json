@@ -6,15 +6,7 @@
     "description": {
         "en": "Provides access to Dropbox account(s) for file upload and download. Dropbox is a cloud-based file storage solution designed to store, share, and synchronise files across multiple devices."
     },
-    "actionNames": [
-        "abortOperation",
-        "auditObjectContent",
-        "findObject",
-        "getReadableStream",
-        "listNodes",
-        "previewObject",
-        "retrieveRecords"
-    ],
+    "actionNames": [],
     "category": null,
     "categoryId": "fileStore",
     "firstCreatedAt": null,
@@ -32,9 +24,9 @@
     "statusId": "beta",
     "typeId": "connector",
     "usage": null,
-    "usageId": "source",
+    "usageId": "unknown",
     "vendorAccountURL": "https://www.dropbox.com/login",
     "vendorDocumentationURL": "https://help.dropbox.com/",
     "vendorHomeURL": "https://www.dropbox.com/",
-    "version": "1.0.118"
+    "version": "1.0.119"
 }
